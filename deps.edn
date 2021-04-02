@@ -1,0 +1,5 @@
+{:deps
+ {org.clojure/clojure {:mvn/version "1.6.0"},
+  com.ifesdjeen/utils {:mvn/version "0.4.0"},
+  clojurewerkz/meltdown {:mvn/version "1.1.0"},
+  rhizome/rhizome {:mvn/version "0.2.0"}}}
