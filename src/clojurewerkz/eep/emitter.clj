@@ -36,6 +36,7 @@
   (:require clojure.pprint
             [clojure.set :as s]
             [clojurewerkz.meltdown.reactor :as mr]
+            [clojurewerkz.meltdown.env :as me]
             [clojurewerkz.meltdown.consumers :as mc]
             [clojurewerkz.meltdown.selectors :as ms :refer [$]]
             [clojurewerkz.eep.windows        :as ws]
