@@ -148,8 +148,9 @@ Pretty much topic routing.")
 
 (defn create
   "Creates a fresh Event Emitter with the default executor."
-  ([{:keys [dispatcher-type dispatcher env]
-     :or   [env (me/create)]}]
+  ([{:keys [dispatcher-type dispatcher]
+     env :env
+     :or {env (me/create)}}]
    (let [reactor (mr/create :dispatcher-type dispatcher-type :dispatcher dispatcher :env env)]
      (Emitter. (atom {}) (ConcurrentHashMap.) reactor)))
   ([] (create {})))
